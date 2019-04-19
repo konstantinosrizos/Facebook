@@ -2,7 +2,7 @@
 
 ### Facebook Newsfeed
 
-###### I developed a Facebook Newsfeed using `UItableView` and `UITableViewController` in iOS with Swift.
+###### I developed an Facebook Newsfeed using `UItableView` and `UITableViewController` in iOS with Swift.
 
 ### App Stracture:
 
