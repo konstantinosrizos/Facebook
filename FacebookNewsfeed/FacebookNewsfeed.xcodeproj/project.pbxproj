@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ED84CC8FCC7974033141EDA /* Pods_FacebookNewsfeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE038BC8E5326F894FF332C5 /* Pods_FacebookNewsfeed.framework */; };
 		52AFA71C2204B15E0037FB00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AFA71B2204B15E0037FB00 /* AppDelegate.swift */; };
 		52AFA71E2204B15E0037FB00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AFA71D2204B15E0037FB00 /* ViewController.swift */; };
 		52AFA7212204B15E0037FB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AFA71F2204B15E0037FB00 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272C580529BAD1979BCA656A /* Pods-FacebookNewsfeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookNewsfeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookNewsfeed/Pods-FacebookNewsfeed.release.xcconfig"; sourceTree = "<group>"; };
 		52AFA7182204B15E0037FB00 /* FacebookNewsfeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookNewsfeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AFA71B2204B15E0037FB00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AFA71D2204B15E0037FB00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		52AFA72D2204B6930037FB00 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		52AFA72F2204C4040037FB00 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		52AFA7312204C7F40037FB00 /* NewsfeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedTableViewController.swift; sourceTree = "<group>"; };
+		DE038BC8E5326F894FF332C5 /* Pods_FacebookNewsfeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookNewsfeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F864C0A092B7A4008DD8F680 /* Pods-FacebookNewsfeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookNewsfeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookNewsfeed/Pods-FacebookNewsfeed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED84CC8FCC7974033141EDA /* Pods_FacebookNewsfeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014C00337F2705635B5545F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F864C0A092B7A4008DD8F680 /* Pods-FacebookNewsfeed.debug.xcconfig */,
+				272C580529BAD1979BCA656A /* Pods-FacebookNewsfeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		52AFA70F2204B15E0037FB00 = {
 			isa = PBXGroup;
 			children = (
 				52AFA71A2204B15E0037FB00 /* FacebookNewsfeed */,
 				52AFA7192204B15E0037FB00 /* Products */,
+				014C00337F2705635B5545F9 /* Pods */,
+				692EF9FDD9FCDC7E080D993D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +89,14 @@
 			path = FacebookNewsfeed;
 			sourceTree = "<group>";
 		};
+		692EF9FDD9FCDC7E080D993D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE038BC8E5326F894FF332C5 /* Pods_FacebookNewsfeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52AFA72A2204B1600037FB00 /* Build configuration list for PBXNativeTarget "FacebookNewsfeed" */;
 			buildPhases = (
+				2467297D670CB438FD4329BF /* [CP] Check Pods Manifest.lock */,
 				52AFA7142204B15E0037FB00 /* Sources */,
 				52AFA7152204B15E0037FB00 /* Frameworks */,
 				52AFA7162204B15E0037FB00 /* Resources */,
+				5E478FED1CAB3269F5500E17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,6 +131,7 @@
 				TargetAttributes = {
 					52AFA7172204B15E0037FB00 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -138,6 +165,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2467297D670CB438FD4329BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacebookNewsfeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E478FED1CAB3269F5500E17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FacebookNewsfeed/Pods-FacebookNewsfeed-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacebookNewsfeed/Pods-FacebookNewsfeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52AFA7142204B15E0037FB00 /* Sources */ = {
@@ -292,6 +366,7 @@
 		};
 		52AFA72B2204B1600037FB00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F864C0A092B7A4008DD8F680 /* Pods-FacebookNewsfeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,13 +378,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rizos.FacebookNewsfeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		52AFA72C2204B1600037FB00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272C580529BAD1979BCA656A /* Pods-FacebookNewsfeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,7 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rizos.FacebookNewsfeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

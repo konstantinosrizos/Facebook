@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class NewsfeedTableViewController: UITableViewController {
     
@@ -41,6 +42,11 @@ class NewsfeedTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        sender.endRefreshing()
+        tableView.reloadData()
+        self.view.makeToast("The data has been reloaded", duration: 3, position: .bottom)
+    }
 }
 
 // MARK: - UITableViewDataSource

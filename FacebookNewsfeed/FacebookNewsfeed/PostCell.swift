@@ -7,7 +7,7 @@
 //
 
 import UIKit
- 
+  
 class PostCell: UITableViewCell {
     
     @IBOutlet weak var timeAgoLabel: UILabel!

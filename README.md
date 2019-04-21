@@ -9,6 +9,7 @@
 + Create `UITableViewController` and `UITableView`.
 + Subclass `UITableViewCell` to create custom Table View Cell.
 + Apply Auto Layout on `UITableViewCell` to have dynamic Table View Cell Height.
++ Create `UIRefreshControl` a Pull to Refresh Feature.
 ---
 
 + The Newsfeed
